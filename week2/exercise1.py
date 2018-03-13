@@ -6,13 +6,13 @@ TODO: execute that line and write what actually happened next to it.
 
 See example for first print statement
 """
-import platform
+import platform 
 
 # I think this will print "hello! Let's get started" by calling the print function.
 print("hello! Let's get started")  # it printed "hello! Let's get started"
 # I thinkk this will assign some_words to a set of 'chips'
 some_words = ['what', 'does', 'this', 'line', 'do', '?'] 
-#this will print all the strings in the set
+#this will print all the strings in the sety 
 for word in some_words:
     print(word)
 #this will print all the strings in the set
