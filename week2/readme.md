@@ -1,1 +1,2 @@
 TODO: Reflect on what you learned this week and what is still unclear.
+I was able to broaden my knowledgge in python especially being able to do for loops and if statements. I still have difficulty in terms of understanding python syntax but some things are easily searched up on. However the last exercise to generate a pyramid was damn too hard yo. But I would actually learn how to do it. Hopefully the answers come out. 
