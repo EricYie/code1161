@@ -229,10 +229,10 @@ def loops_7():
     for i in range(5):
         Shape2 = []
         for j in range(9):
-            if j == abs(4-i):
+            if abs(j-4)<= i:
                 Shape2.append("*")
             else:
-                Shape.append("_")
+                Shape2.append(" ")     
         Shape.append(Shape2)
     return Shape
 

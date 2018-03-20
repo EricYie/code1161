@@ -67,7 +67,9 @@ def stubborn_asker(low, high):
     Ask for a number, and if the response is outside the bounds keep asking
     until you get a number that you think is OK
     """
-    pass
+    low = 0
+    high = 10
+ask_number = input("Number? ")
 
 
 def not_number_rejector(message):
