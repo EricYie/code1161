@@ -32,5 +32,5 @@ def usefulFunction():
     """
     #prints six attributes
     print(platform.uname())
-#calls the function
+#calls the function!
 usefulFunction()
