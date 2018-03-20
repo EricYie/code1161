@@ -66,7 +66,7 @@ def minitest(f, args, expected):
                           args=str(args)[1:-1],
                           result=result == expected,
                           expected=expected))
-    return result == expected
+    return result == expected 
 
 
 if __name__ == "__main__":

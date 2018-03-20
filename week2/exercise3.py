@@ -55,9 +55,8 @@ def loops_1c(number_of_items=5, symbol="#"):
     E.g.: ['#', '#', '#', '#', '#']
     """
     Shape = []
-    for x in range(5):
-        Shape.append("#")
-        Shape.extend
+    for x in range(number_of_items):
+        Shape.append(symbol)
     return Shape
 
 def loops_2():
@@ -80,13 +79,11 @@ def loops_2():
     """
     Shape = []
     for y in range(10):
+        Shape2 = []
         for x in range(10):
-            Shape.append("*")
-        Shape.append("\n")
+            Shape2.append("*")
+        Shape.append(Shape2)
     return Shape 
-   
-        
-    #return Shape
 
 
 def loops_3():
@@ -112,9 +109,10 @@ def loops_3():
     """
     Shape =[]
     for x in range(10):
+        Shape2 = []
         for y in range(10):
-            Shape.append(x)
-        Shape.append("\n")
+            Shape2.append(str(x))
+        Shape.append(Shape2)
     return Shape
 
 
@@ -137,9 +135,10 @@ def loops_4():
     """
     Shape = []
     for y in range(10):
+        Shape2 = []
         for x in range(10):
-            Shape.append(x)
-        Shape.append("\n")
+            Shape2.append(str(x))
+        Shape.append(Shape2)
     return Shape
 def loops_5():
     """Make the coordinates of the block.
@@ -165,9 +164,10 @@ def loops_5():
     """
     Shape = []
     for y in range(10):
+        Shape2 = []
         for x in range(5):
-            Shape.append("i"+str(y)+"j" + str(x)+ " ")
-        Shape.append("\n")
+            Shape2.append("(" + "i"+str(y)+", "+ "j" + str(x) +")")
+        Shape.append(Shape2)
     return Shape
     
 
@@ -193,10 +193,11 @@ def loops_6():
     TIP: look out for the starting condition.
     """
     Shape = []
-    for x in range(10):    
-        for y in range(x):
-            Shape.append(y)
-        Shape.append("\n")
+    for x in range(10):  
+        Shape2 = []  
+        for y in range(x+1):
+            Shape2.append(str(y))
+        Shape.append(Shape2)
     return Shape
         
 
@@ -225,16 +226,15 @@ def loops_7():
     lots of diagrams!
     """
     Shape = []
-    for y in range(5):
-        for x in range(9):
-            if x == 4:
-                # 4, 3,4,5 3,4,5,6,7  
-                Shape.append("*")
+    for i in range(5):
+        Shape2 = []
+        for j in range(9):
+            if j == abs(4-i):
+                Shape2.append("*")
             else:
                 Shape.append("_")
-        Shape.append("\n")
+        Shape.append(Shape2)
     return Shape
-
 
 def lp(some_kind_of_list, exercise_name):
     """Help to see what's going on.
