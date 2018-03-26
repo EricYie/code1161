@@ -67,10 +67,15 @@ def stubborn_asker(low, high):
     Ask for a number, and if the response is outside the bounds keep asking
     until you get a number that you think is OK
     """
-    low = 0
-    high = 10
 ask_number = input("Number? ")
 
+    print("Pick a number")
+    while True:
+        guess = int(input())
+        if guess < low or guess > high: 
+            print("Pick another number")
+        else:
+            return guess
 
 def not_number_rejector(message):
     """Ask for a number repeatedly until actually given one.
@@ -79,7 +84,14 @@ def not_number_rejector(message):
     "six", "8!") then throw it out and ask for an actual number.
     When you do get a number, return it.
     """
-    pass
+    message = "give me a number: "
+    while True:
+        try:
+            guess = int(input(message))
+            print("{} is a number".format(guess))
+            return guess
+        except Exception as e:
+            print("try again {}".format(e))
 
 
 def super_asker(low, high):
@@ -88,7 +100,18 @@ def super_asker(low, high):
     Combine stubborn_asker and not_number_rejector to make a function
     that does it all!
     """
-    pass
+    message = "Please enter a number: "
+    while True:
+        try:
+            guess = int(input(message))
+            print("{} is a number".format(guess))
+            return guess
+        except Exception as e:
+            print("{} is not a number, please enter a number only".format(e))
+    if guess < low or guess > high:
+        print("{} is outside the bound".format(guess))
+    else:
+        return guess
 
 
 if __name__ == "__main__":

@@ -28,7 +28,18 @@ def binary_search(low, high, actual_number):
       tests aren't that smart yet.)
     """
 
-    return {"guess": guess, "tries": tries}
+    tries = 0 
+    while True:
+      guessed_number = ((low+high) // 2)
+      if guessed_number < actual_number:
+        low = guessed_number + 1
+        tries+= 1
+      elif guessed_number > actual_number:
+        high = guessed_number - 1
+        tries += 1
+      else:
+        guessed_number = {"guess": guessed_number, "tries": tries}
+        return guessed_number
 
 
 if __name__ == "__main__":
