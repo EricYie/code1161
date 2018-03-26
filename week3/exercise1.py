@@ -67,8 +67,6 @@ def stubborn_asker(low, high):
     Ask for a number, and if the response is outside the bounds keep asking
     until you get a number that you think is OK
     """
-ask_number = input("Number? ")
-
     print("Pick a number")
     while True:
         guess = int(input())
